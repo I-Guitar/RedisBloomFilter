@@ -32,7 +32,7 @@ public class DuplicateCheckUtils {
      * @return 该记录是否存在
      */
     public static boolean addUrlDuplicate(JedisOpt jedisOpt, String url) {
-        String domain = IUrlUtils.extraDomain(url);
+        String domain = UrlUtils.extraDomain(url);
         return addDuplicate(jedisOpt, domain, url);
     }
 
@@ -67,7 +67,7 @@ public class DuplicateCheckUtils {
      * 指定 url 是否存在
      */
     public static boolean isUrlExists(JedisOpt jedisOpt, String url) {
-        String domain = IUrlUtils.extraDomain(url);
+        String domain = UrlUtils.extraDomain(url);
         return isExists(jedisOpt, domain, url);
     }
 

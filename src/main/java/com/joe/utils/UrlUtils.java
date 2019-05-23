@@ -3,7 +3,7 @@ package com.joe.utils;
 /**
  * Create by joe on 2018/9/26
  */
-public class IUrlUtils {
+public class UrlUtils {
 
     /**
      * 根据url抽取domain
